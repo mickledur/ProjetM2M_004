@@ -1,0 +1,51 @@
+<script type="text/javascript">
+    RED.nodes.registerType('blockchainVerify',{
+		category: 'storage-output',
+		color: '#C0C0C0',
+		defaults: {
+		    name: { value: "" },
+            enabledebug: { value: "false" }
+		},
+		credentials: {
+		    username: { type:"text" },
+		    password: { type: "password" },
+            apikey: { type: "text" }
+		},
+		inputs:1,
+		outputs:1,
+		icon: "white-globe.png",
+		label: function() {
+			return this.name||"blockchainVerify";
+		}
+    });
+</script>
+
+<script type="text/x-red" data-template-name="blockchainVerify">
+    <div class="form-row">
+        <label for="node-input-username"><i class="icon-tag"></i> Tierion Username</label>
+        <input type="text" id="node-input-username">
+    </div>
+    <div class="form-row">
+        <label for="node-input-password"><i class="icon-tag"></i> Tierion Password</label>
+        <input type="password" id="node-input-password">
+    </div>
+    <div class="form-row">
+        <label for="node-input-apikey"><i class="icon-tag"></i> Tierion API Key</label>
+        <input type="text" id="node-input-apikey">
+    </div>
+    <div class="form-row">
+        <label for="node-input-enabledebug"><i class="icon-tag"></i> Enable Debug</label>
+        <select id="node-input-enabledebug">
+            <option value="true">true</option>
+            <option value="false">false</option>
+        </select>     
+    </div>
+	<div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="blockchainVerify">
+    <p>A node that verifies a hash stamped on the blockchain.</p>
+</script>

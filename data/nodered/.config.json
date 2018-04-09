@@ -557,6 +557,119 @@
      "file": "/usr/src/node-red/node_modules/node-red-node-twitter/27-twitter.js"
     }
    }
+  },
+  "node-red-contrib-blockchain": {
+   "name": "node-red-contrib-blockchain",
+   "version": "0.1.0",
+   "local": true,
+   "nodes": {
+    "blockchain": {
+     "name": "blockchain",
+     "types": [
+      "blockchain"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-blockchain",
+     "file": "/data/node_modules/node-red-contrib-blockchain/node-red-contrib-blockchain.js"
+    },
+    "blockchainVerify": {
+     "name": "blockchainVerify",
+     "types": [
+      "blockchainVerify"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-blockchain",
+     "file": "/data/node_modules/node-red-contrib-blockchain/node-red-contrib-blockchain-verify.js"
+    }
+   }
+  },
+  "node-red-contrib-composer": {
+   "name": "node-red-contrib-composer",
+   "version": "0.0.10",
+   "local": true,
+   "nodes": {
+    "hperledger-composer": {
+     "name": "hperledger-composer",
+     "types": [
+      "hyperledger-composer-out",
+      "hyperledger-composer-mid",
+      "hyperledger-composer-in"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-composer",
+     "file": "/data/node_modules/node-red-contrib-composer/nodes/hyperledger-composer.js"
+    },
+    "hperledger-composer-config": {
+     "name": "hperledger-composer-config",
+     "types": [
+      "hyperledger-composer-config"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-composer",
+     "file": "/data/node_modules/node-red-contrib-composer/nodes/hyperledger-composer-config.js"
+    }
+   }
+  },
+  "node-red-contrib-viseo-ethjs": {
+   "name": "node-red-contrib-viseo-ethjs",
+   "version": "0.0.4",
+   "local": true,
+   "nodes": {
+    "ethjs-wallet": {
+     "name": "ethjs-wallet",
+     "types": [
+      "ethjs-wallet"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-viseo-ethjs",
+     "file": "/data/node_modules/node-red-contrib-viseo-ethjs/node-ethjs-wallet.js"
+    },
+    "ethjs-contract": {
+     "name": "ethjs-contract",
+     "types": [
+      "ethjs-contract"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-viseo-ethjs",
+     "file": "/data/node_modules/node-red-contrib-viseo-ethjs/node-ethjs-contract.js"
+    },
+    "ethjs-transaction": {
+     "name": "ethjs-transaction",
+     "types": [
+      "ethjs-transaction"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-viseo-ethjs",
+     "file": "/data/node_modules/node-red-contrib-viseo-ethjs/node-ethjs-transaction.js"
+    },
+    "ethjs-account": {
+     "name": "ethjs-account",
+     "types": [
+      "ethjs-account"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-viseo-ethjs",
+     "file": "/data/node_modules/node-red-contrib-viseo-ethjs/node-ethjs-account.js"
+    },
+    "ethjs-network": {
+     "name": "ethjs-network",
+     "types": [
+      "ethjs-network"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-viseo-ethjs",
+     "file": "/data/node_modules/node-red-contrib-viseo-ethjs/node-ethjs-network.js"
+    }
+   }
   }
  },
  "_credentialSecret": "344c602bbe28b32ddad96d4e287c86b63eea261a82515c38e06c77ed43404d85"

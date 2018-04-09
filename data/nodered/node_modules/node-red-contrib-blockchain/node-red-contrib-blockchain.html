@@ -1,0 +1,46 @@
+<script type="text/javascript">
+    RED.nodes.registerType('blockchain',{
+		category: 'storage-output',
+		color: '#C0C0C0',
+		defaults: {
+		    name: { value: "" },
+            enabledebug: { value: "false" }
+		},
+		credentials: {
+		    username: {type:"text"},
+		    password: {type:"password"}
+		},
+		inputs:1,
+		outputs:1,
+		icon: "white-globe.png",
+		label: function() {
+			return this.name||"blockchain";
+		}
+    });
+</script>
+
+<script type="text/x-red" data-template-name="blockchain">
+    <div class="form-row">
+        <label for="node-input-username"><i class="icon-tag"></i> Tierion Username</label>
+        <input type="text" id="node-input-username">
+    </div>
+    <div class="form-row">
+        <label for="node-input-password"><i class="icon-tag"></i> Tierion Password</label>
+        <input type="password" id="node-input-password">
+    </div>
+    <div class="form-row">
+        <label for="node-input-enabledebug"><i class="icon-tag"></i> Enable Debug</label>
+        <select id="node-input-enabledebug">
+            <option value="true">true</option>
+            <option value="false">false</option>
+        </select>     
+    </div>
+	<div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="blockchain">
+    <p>A simple node that places a hash on the blockchain.</p>
+</script>
